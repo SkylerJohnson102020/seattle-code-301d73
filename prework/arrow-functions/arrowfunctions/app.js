@@ -69,13 +69,8 @@ console.log('Multi-line arrow function:', multiLiner('hello'));
 // STEP 8
 // The way an object is returned is different with an arrow function, too.
 // Here is how we return an object without arrow functions
-const oldObject = (array) => {
-  return {
-    firstValue: array[0],
-    secondValue: array[1],
-    thirdValue: array[2]
-  };
-};
+const oldObject = (array) => ({ firstValue: array[0], secondValue: array[1], thirdValue: array[2]});
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log('Hello from the old object function', oldObject(['hi', 'hello', 'are you there?']));
